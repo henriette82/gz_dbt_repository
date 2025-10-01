@@ -7,7 +7,7 @@ date_date,
 orders_id,
 pdt_id AS product_id,
 revenue,
-quanti
-from source_data
+quantity
+from source
 )
 SELECT * from renamed
