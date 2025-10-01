@@ -1,0 +1,115 @@
+
+version: 2
+
+sources:
+    - name: raw
+      schema: gz_raw_data
+      tables: 
+       - name: sales
+         identifier: raw_gz_sales
+         description: sales of Greenweez
+         columns:
+           - name: date_date
+             description: date of purchase
+           - name: orders_id
+             description: id of orders, primary key
+           - name: products_id
+             description: id of product
+           - name: revenue 
+             description: revenue
+           - name: quantity
+             description: purchase amount
+             
+                 
+    
+       - name: product
+         identifier: raw_gz_product 
+         description: products of Greenweez
+         columns:
+           - name: products_id
+             description: id of products, primary key
+           - name: purchase_price
+             description: price of purchase
+             
+          
+       - name: ship 
+         identifier: raw_gz_ship   
+         description: shipping data of Greenweez
+         columns:
+           - name: orders_id
+             description: id of orders, primary key
+           - name: shipping_fee
+             description: fee for shippimg
+           - name: logcost
+             description: cost for ligistics
+           - name: ship_cost
+             description: total costs for shipping
+
+
+       - name: adwords
+         identifier: raw_gz_adwords
+         description: adwords data from Greenweez
+         columns:
+           - name: campaign_key
+             description:  primary key
+           - name: date_date
+             description: date         
+           - name: paid_source
+             description: source   
+           - name: campaign_name
+             description: name of the campaign                
+           - name: impression
+             description: number of impression                    
+           - name: click
+             description: number of clicks     
+
+       - name: bing
+         identifier: raw_gz_adwords
+         description: bing data from Greenweez
+         columns:
+            - name: campaign_key
+              description:  primary key
+            - name: date_date
+              description: date         
+            - name: paid_source
+              description: source   
+            - name: campaign_name
+              description: name of the campaign                
+            - name: impression
+              description: number of impression                    
+            - name: click
+              description: number of clicks  
+
+       - name: criteo
+         identifier: raw_gz_adwords
+         description: criteo data from Greenweez
+         columns:
+            - name: campaign_key
+              description:  primary key
+            - name: date_date
+              description: date         
+            - name: paid_source
+              description: source   
+            - name: campaign_name
+              description: name of the campaign                
+            - name: impression
+              description: number of impression                    
+            - name: click
+              description: number of clicks  
+
+       - name: facebook
+         identifier: raw_gz_adwords
+         description: facebook data from Greenweez
+         columns:
+            - name: campaign_key
+              description:  primary key
+            - name: date_date
+              description: date         
+            - name: paid_source
+              description: source   
+            - name: campaign_name
+              description: name of the campaign                
+            - name: impression
+              description: number of impression                    
+            - name: click
+              description: number of clicks                
