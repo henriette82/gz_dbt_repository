@@ -79,3 +79,37 @@ sources:
               description: number of impression                    
             - name: click
               description: number of clicks  
+
+       - name: criteo
+         identifier: raw_gz_adwords
+         description: criteo data from Greenweez
+         columns:
+            - name: campaign_key
+              description:  primary key
+            - name: date_date
+              description: date         
+            - name: paid_source
+              description: source   
+            - name: campaign_name
+              description: name of the campaign                
+            - name: impression
+              description: number of impression                    
+            - name: click
+              description: number of clicks  
+
+       - name: facebook
+         identifier: raw_gz_adwords
+         description: facebook data from Greenweez
+         columns:
+            - name: campaign_key
+              description:  primary key
+            - name: date_date
+              description: date         
+            - name: paid_source
+              description: source   
+            - name: campaign_name
+              description: name of the campaign                
+            - name: impression
+              description: number of impression                    
+            - name: click
+              description: number of clicks                
